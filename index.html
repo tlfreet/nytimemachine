@@ -2,15 +2,21 @@
     <head>
         <meta charset="utf-8">
         <meta name= "viewport" content="width=device-width">
-        <title>Congress and The News</title>
+        <title>NYTime Machine</title>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="index.js"></script>
         <link href="main.css" rel="stylesheet" type="text/css"/>
     </head>
     <body> 
-        <form class="submit-form">
-            <input></input>
-            <button></button>
+        <form id="submit-form">
+           <!-- <input class="year" placeholder="year"></input>
+            <input class="month" placeholder="month"></input>
+            <input class="day" placeholder="day"></input> -->
+            <input id="date" type="date"></input>
+            <button id="submit-button">Search</button>
         </form>
-        <div class="column legislation"></div>
-        <div class="column news"></div>
+        <div class="column past-news">
+        <div class="article"></div>
+        </div>
+        <div class="column current-news"></div>
     </body>
